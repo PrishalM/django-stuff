@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Cow list</h1>
+<ul>
+  {% for cow in cows %}
+  <li data-id="{{cow.id}}">{{cow.name}}</li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}
